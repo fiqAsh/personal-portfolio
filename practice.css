@@ -1,0 +1,26 @@
+ul {
+  list-style-type:circle; /* Changes the bullet point to a square */
+}
+li {
+  color: blue; /* Changes the text color of list items to blue */
+}
+.container {
+  display: flex;
+  flex-wrap:wrap-reverse;
+  background-color: lightgray;
+}
+.item {
+  background-color: cornflowerblue;
+  padding: 20px;
+  margin: 10px;
+  color: white;
+  font-size: 1.5em;
+}
+.example::before {
+  content: 'Before ';
+  color: blue;
+}
+.example::after {
+  content: ' After';
+  color: red;
+}
