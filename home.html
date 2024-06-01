@@ -8,6 +8,7 @@
     <title>
       personal portfolio
     </title>
+    <script src="https://kit.fontawesome.com/e2d6ff16ab.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div id="header">
@@ -90,23 +91,87 @@
       </div>
     </div>
 
-    <script>
-      var tablinks=document.getElementsByClassName('tab-links');
-      var tabcontents=document.getElementsByClassName('tab-contents');
-
-      function opentab(tabname){
-        for (tablink of tablinks){
-          tablink.classList.remove("active-link")
-        }
-        for (tabcontent of tabcontents){
-          tabcontent.classList.remove("active-tab")
-        }
-        event.currentTarget.classList.add('active-link');
-        document.getElementById(tabname).classList.add('active-tab')
-      }
 
 
+    <!-- services -->
 
-    </script>
+    <div id="services">
+      <div class="container">
+        <h1 class="subtitle">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit,  incididunt ut labore et dolore magna aliqua.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- ---------portfolio-------- -->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png">
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p> The app connects you to the talented people around the world.
+                Download it from app store
+              </p>
+              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png">
+            <div class="layer">
+              <h3>Music App</h3>
+              <p> The app connects you to the talented people around the world.
+                Download it from app store
+              </p>
+              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png">
+            <div class="layer">
+              <h3>Online Shopping App</h3>
+              <p> The app connects you to the talented people around the world.
+                Download it from app store
+              </p>
+              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+    <script src="home.js"></script>
+    
   </body>
 </html>
