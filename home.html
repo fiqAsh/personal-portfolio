@@ -41,14 +41,72 @@
               Fueled by strong coffee and late-night coding sessions, I'm a 20-year-old computer science major on a mission to conquer the digital world. Between lectures and tackling challenging assignments, I find my zen coding personal projects. My friends understand the struggle of debugging woes and the thrill of a perfectly written line of code. We fuel each other's creativity, balancing hackathons with exploring the city's tech scene. I'm passionate about [developing sustainable AI solutions/building innovative web applications] and using my skills to make a real impact.
             </p>
             <div class="tab-titles">
-              <p class="tab-links active-link">Skills</p>
-              <p class="tab-links">Experience</p>
-              <p class="tab-links">Education</p>
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
 
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>UI/UX</span><br>Designing web/app interface
+                </li>
+                <li>
+                  <span>Web Dev</span><br>Web app development
+                </li>
+                <li>
+                  <span>App dev</span><br>Building Android/IOS apps
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Coding</span><br>Since a baby
+                </li>
+                <li>
+                  <span>Crying</span><br>Since started Coding
+                </li>
+                <li>
+                  <span>Laughing</span><br>Life sucks
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>School</span><br>Don't ask
+                </li>
+                <li>
+                  <span>College</span><br>UTTARA POSH KIDS 
+                </li>
+                <li>
+                  <span>University</span><br>BRAC SUCKS
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <script>
+      var tablinks=document.getElementsByClassName('tab-links');
+      var tabcontents=document.getElementsByClassName('tab-contents');
+
+      function opentab(tabname){
+        for (tablink of tablinks){
+          tablink.classList.remove("active-link")
+        }
+        for (tabcontent of tabcontents){
+          tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add('active-link');
+        document.getElementById(tabname).classList.add('active-tab')
+      }
+
+
+
+    </script>
   </body>
 </html>
